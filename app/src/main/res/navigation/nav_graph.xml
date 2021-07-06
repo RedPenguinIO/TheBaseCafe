@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="io.peng.thebasecafe.Cart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cart_to_drinks"
+            app:destination="@id/drinks" />
+    </fragment>
+    <fragment
+        android:id="@+id/pay"
+        android:name="io.peng.thebasecafe.Pay"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_pay_to_drinks"
+            app:destination="@id/drinks" />
+        <action
+            android:id="@+id/action_pay_to_track"
+            app:destination="@id/track" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinks"
+        android:name="io.peng.thebasecafe.Drinks"
+        android:label="fragment_drinks"
+        tools:layout="@layout/fragment_drinks" />
+    <fragment
+        android:id="@+id/track"
+        android:name="io.peng.thebasecafe.Track"
+        android:label="fragment_track"
+        tools:layout="@layout/fragment_track" />
+    <fragment
+        android:id="@+id/main"
+        android:name="io.peng.thebasecafe.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_cart"
+            app:destination="@id/cart" />
+        <action
+            android:id="@+id/action_main_to_pay"
+            app:destination="@id/pay" />
+    </fragment>
+</navigation>

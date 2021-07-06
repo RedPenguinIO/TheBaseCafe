@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/firstCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/secondCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thirdCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fourthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fifthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sixthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/seventhCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eighthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ninthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tenthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/eleventhCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/twelfthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/thirteenthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fourteenthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fifteenthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sixteenthCard"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="30dp" />
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

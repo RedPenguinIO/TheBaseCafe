@@ -11,7 +11,7 @@ import io.peng.thebasecafe.databinding.FragmentDrinksBinding
 import io.peng.thebasecafe.databinding.FragmentMainBinding
 
 
-class Drinks : Fragment() {   private var navController: NavController? = null
+class Drinks : Fragment(),View.OnClickListener {   private var navController: NavController? = null
 
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class Drinks : Fragment() {   private var navController: NavController? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentDrinksBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -50,5 +50,9 @@ class Drinks : Fragment() {   private var navController: NavController? = null
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onClick(v: View?) {
+        TODO("Not yet implemented")
     }
 }

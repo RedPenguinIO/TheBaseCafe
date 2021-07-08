@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import io.peng.thebasecafe.databinding.FragmentMainBinding
@@ -25,7 +26,7 @@ class Main : Fragment(), View.OnClickListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMainBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -33,7 +34,7 @@ class Main : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        binding
+
     }
 
     companion object {
@@ -46,8 +47,11 @@ class Main : Fragment(), View.OnClickListener {
             }
     }
 
-    override fun onClick(v: View?) {
-
+    override fun onClick(v: View?){
+        when (v!!.id){
+            R.id.cart_btn -> navController!!.navigate(R.id.action_main_to_cart)
+            R.id.pay_btn -> navController!!.navigate(R.id.action_main_to_pay)
+        }
     }
 
     override fun onDestroyView() {

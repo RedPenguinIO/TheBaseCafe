@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import io.peng.thebasecafe.databinding.FragmentCartFoodBinding
 import io.peng.thebasecafe.databinding.FragmentMainBinding
 
-class CartFood : Fragment() {
+class CartFood : Fragment(),View.OnClickListener {
     private var navController: NavController? = null
 
     private val binding get() = _binding!!
@@ -26,7 +26,7 @@ class CartFood : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentCartFoodBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -50,5 +50,9 @@ class CartFood : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onClick(v: View?) {
+
     }
 }

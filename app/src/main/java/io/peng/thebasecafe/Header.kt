@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import io.peng.thebasecafe.databinding.FragmentHeaderBinding
 import io.peng.thebasecafe.databinding.FragmentMainBinding
 
-class Header : Fragment() {
+class Header : Fragment(),View.OnClickListener {
 
     private var navController: NavController? = null
 
@@ -26,7 +26,7 @@ class Header : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHeaderBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -34,23 +34,22 @@ class Header : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        binding
+        binding.cartBtn.setOnClickListener {
+            onClick(it)
+        }
+        binding.payBtn.setOnClickListener {
+            onClick(it)
+        }
+        binding.trackOrderHeader.setOnClickListener {
+            onClick(it)
+        }
     }
 
-    companion object {
-
-        fun newInstance(param1: String, param2: String) =
-            Main().apply {
-                arguments = Bundle().apply {
-
-                }
-            }
-    }
-
-
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onClick(v: View?){
+        when (v!!.id){
+            binding.cartBtn.id -> navController!!.navigate(R.id.action_main_to_cart)
+            binding.payBtn.id -> navController!!.navigate(R.id.action_main_to_pay)
+            binding.trackOrderHeader.id -> navController!!.navigate((R.id.action_main_to_track))
+        }
     }
 }

@@ -23,13 +23,21 @@
             app:cardCornerRadius="30dp" >
 
             <TextView
+                android:layout_marginStart="60dp"
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
-                android:textSize="50sp"
+                android:textSize="30sp"
                 android:layout_height="match_parent"
                 android:text="@string/drinks_menu"
                 android:gravity="center"
                 />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drink"
+                android:contentDescription="@string/logo"/>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView

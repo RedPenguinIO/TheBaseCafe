@@ -11,8 +11,12 @@
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" >
         <action
-            android:id="@+id/action_cart_to_drinks"
-            app:destination="@id/drinks" />
+            android:id="@+id/action_cart_to_pay"
+            app:destination="@id/pay"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/pay"
@@ -20,11 +24,12 @@
         android:label="fragment_pay"
         tools:layout="@layout/fragment_pay" >
         <action
-            android:id="@+id/action_pay_to_drinks"
-            app:destination="@id/drinks" />
-        <action
             android:id="@+id/action_pay_to_track"
-            app:destination="@id/track" />
+            app:destination="@id/track"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/drinks"
@@ -43,9 +48,24 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_main_to_cart"
-            app:destination="@id/cart" />
+            app:destination="@id/cart"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
         <action
             android:id="@+id/action_main_to_pay"
-            app:destination="@id/pay" />
+            app:destination="@id/pay"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_main_to_track"
+            app:destination="@id/track"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
     </fragment>
 </navigation>

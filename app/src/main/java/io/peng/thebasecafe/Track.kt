@@ -26,7 +26,7 @@ class Track : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentTrackBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -51,4 +51,6 @@ class Track : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }

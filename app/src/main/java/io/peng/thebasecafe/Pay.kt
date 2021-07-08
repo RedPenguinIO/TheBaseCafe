@@ -10,7 +10,7 @@ import androidx.navigation.Navigation
 import io.peng.thebasecafe.databinding.FragmentMainBinding
 import io.peng.thebasecafe.databinding.FragmentPayBinding
 
-class Pay : Fragment() {
+class Pay : Fragment(),View.OnClickListener {
     private var navController: NavController? = null
 
     private val binding get() = _binding!!
@@ -25,7 +25,7 @@ class Pay : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentPayBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -33,7 +33,9 @@ class Pay : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        binding
+        binding.track.setOnClickListener {
+            onClick(it)
+        }
     }
 
     companion object {
@@ -46,10 +48,14 @@ class Pay : Fragment() {
             }
     }
 
-
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onClick(v: View?) {
+        when (v!!.id){
+            binding.track.id -> navController!!.navigate(R.id.action_pay_to_track)
+        }
     }
 }

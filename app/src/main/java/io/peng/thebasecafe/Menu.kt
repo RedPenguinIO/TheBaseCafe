@@ -11,7 +11,8 @@ import io.peng.thebasecafe.databinding.FragmentMainBinding
 import io.peng.thebasecafe.databinding.FragmentMenuBinding
 
 
-class Menu : Fragment() {   private var navController: NavController? = null
+class Menu : Fragment() {
+    private var navController: NavController? = null
 
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class Menu : Fragment() {   private var navController: NavController? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMenuBinding.inflate(inflater,container,false)
         return binding.root
     }
@@ -52,4 +53,6 @@ class Menu : Fragment() {   private var navController: NavController? = null
         super.onDestroyView()
         _binding = null
     }
+
+
 }
